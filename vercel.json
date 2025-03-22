@@ -3,18 +3,5 @@
     "buildCommand": "npm run build",
     "installCommand": "npm install",
     "outputDirectory": ".next",
-    "framework": "nextjs",
-    "github": {
-        "enabled": true,
-        "autoAlias": false,
-        "autoJobCancelation": true,
-        "branches": {
-            "main": {
-                "enabled": true
-            },
-            "*": {
-                "enabled": false
-            }
-        }
-    }
+    "framework": "nextjs"
 }
