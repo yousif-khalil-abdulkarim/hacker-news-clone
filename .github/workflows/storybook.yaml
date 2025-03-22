@@ -1,9 +1,4 @@
-on:
-    push:
-        branches: ["main"]
-
-    workflow_dispatch:
-
+on: pull_request
 permissions:
     contents: read
     pages: write

@@ -11,7 +11,7 @@
         "lint": "npx eslint . --ext .ts,.tsx -c .eslintrc.json",
         "lint:fix": "npm run lint -- --fix",
         "storybook": "storybook dev -p 6006",
-        "storybook:build": "storybook build",
+        "storybook:build": "storybook build --config-dir .storybook --output-dir storybook-static --debug",
         "format": "npx prettier \"**/*.json\" --write"
     },
     "dependencies": {
