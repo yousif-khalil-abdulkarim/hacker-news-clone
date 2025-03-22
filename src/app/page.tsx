@@ -1,3 +1,10 @@
+import "@/globals.css";
+import { Button } from "@heroui/button";
+
 export default function Home() {
-    return <div className="bg-red-500 p-20">asd</div>;
+    return (
+        <div>
+            <Button> asdasd</Button>
+        </div>
+    );
 }
