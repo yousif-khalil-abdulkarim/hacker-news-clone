@@ -3,5 +3,18 @@
     "buildCommand": "npx run build",
     "installCommand": "npm install",
     "outputDirectory": ".next",
-    "framework": "nextjs"
+    "framework": "nextjs",
+    "github": {
+        "enabled": true,
+        "autoAlias": false,
+        "autoJobCancelation": true,
+        "branches": {
+            "main": {
+                "enabled": true
+            },
+            "*": {
+                "enabled": false
+            }
+        }
+    }
 }
