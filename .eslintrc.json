@@ -111,6 +111,13 @@
                 "prev": ["const", "let", "var"],
                 "next": ["const", "let", "var"]
             }
+        ],
+        "no-relative-import-paths/no-relative-import-paths": [
+            "error",
+            {
+                "rootDir": "src",
+                "prefix": "@"
+            }
         ]
     }
 }
