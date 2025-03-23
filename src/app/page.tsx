@@ -1,3 +1,7 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
-    return <div>asdasd</div>;
+    redirect("/top");
+
+    return <></>;
 }

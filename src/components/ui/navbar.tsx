@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-function Navbar({ className, ...props }: React.ComponentProps<"nav">) {
+export function Navbar({ className, ...props }: React.ComponentProps<"nav">) {
     return (
         <nav
             className={cn("flex items-center justify-between py-4", className)}
@@ -12,27 +12,10 @@ function Navbar({ className, ...props }: React.ComponentProps<"nav">) {
     );
 }
 
-function NavbarLeft({ className, ...props }: React.ComponentProps<"nav">) {
-    return (
-        <nav
-            className={cn("flex items-center justify-start gap-4", className)}
-            data-slot="navbar-left"
-            {...props}
-        />
-    );
-}
-
-function NavbarRight({ className, ...props }: React.ComponentProps<"nav">) {
-    return (
-        <nav
-            className={cn("flex items-center justify-end gap-4", className)}
-            data-slot="navbar-right"
-            {...props}
-        />
-    );
-}
-
-function NavbarCenter({ className, ...props }: React.ComponentProps<"nav">) {
+export function NavbarCenter({
+    className,
+    ...props
+}: React.ComponentProps<"nav">) {
     return (
         <nav
             className={cn("flex items-center justify-center gap-4", className)}
@@ -41,5 +24,3 @@ function NavbarCenter({ className, ...props }: React.ComponentProps<"nav">) {
         />
     );
 }
-
-export { Navbar, NavbarLeft, NavbarRight, NavbarCenter };
